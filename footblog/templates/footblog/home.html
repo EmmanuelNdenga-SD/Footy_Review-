@@ -6,6 +6,7 @@
     <hr>
     {% for post in posts %}
         <article>
+            <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}" alt="{{ post.title }}" class="img-fluid mb-3">
             <h2>{{ post.title }}</h2>
             <p><strong>By {{ post.author }}</strong></p>
             <p>{{ post.content }}</p>
